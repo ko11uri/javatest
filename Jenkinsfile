@@ -7,7 +7,6 @@ pipeline {
                 echo $JAVA_HOME
                 which java
                 which javac
-                env
             }
         }
         stage('Compile') {
