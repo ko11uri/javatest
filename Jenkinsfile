@@ -3,12 +3,12 @@ pipeline {
     stages {
         stage('Compile') {
             steps {
-                script("javac HelloWorld.java")
+                sh("javac HelloWorld.java")
             }
         }
         stage('Run') {
             steps {
-                script("java HelloWorld")
+                sh("java HelloWorld")
             }
         }
     }
