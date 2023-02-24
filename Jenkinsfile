@@ -1,6 +1,9 @@
 pipeline {
-    agent any
-
+    agent {
+        node {
+            label 'master'
+        }
+    }
     stages {
         stage('Inits') {
             steps {
