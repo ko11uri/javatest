@@ -9,7 +9,7 @@ pipeline {
         stage('Run') {
             steps {
                 script {
-                    def ar = ['one', 'two']
+                    def ar = ['oneexample', 'twoexample',"three"]
                     for (int i = 0; i < ar.size(); i++) {
                         sh("java HelloWorld ${ar[i]}")
                     }
